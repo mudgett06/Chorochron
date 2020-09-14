@@ -1,0 +1,26 @@
+<svg class="background">
+ <defs>
+   <symbol id="gradient-symbol">
+        <gradientRect id="gradientRect" width="100%" height="100%" fill="#00FFFF"
+        gradient-type="bilinear"
+        gradient-x1="0%" gradient-y1="0%"
+        gradient-x2="100%" gradient-y2="100%"
+        gradient-color2="#FF00FF"
+        gradient-color3="#FFFF00"
+        gradient-color4="#00FF00" >
+         <animate id="c1Animator" easing="ease-in" attributeName="fill" dur="2" begin="enable"/>
+         <animate id="c2Animator" easing="ease-in-out" attributeName="gradient-color2"  dur="2" begin="enable"/>
+         <animate id="c3Animator" easing="ease-in-out" attributeName="gradient-color3" dur="2" begin="enable" />
+         <animate id="c4Animator" easing="ease-out" attributeName="gradient-color4" dur="2" begin="enable" />
+       </gradientRect>
+  </symbol>
+ </defs>
+ <mask id="mask">
+  <text id="timeLabel" />
+  <text id="dateLabel" />
+  <text id="dowLabel" />
+ </mask>
+ <svg mask="#mask" width="100%" height="100%">
+   <use id="shifting-gradient" href="#gradient-symbol" width="100%" height="100%" />
+ </svg>
+</svg>
